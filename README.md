@@ -35,11 +35,19 @@ Commands with these levels don't output anything more than without the verbosity
 
 They may do with errors and warnings, but I haven't seen any yet.
 
+- Command:
+
 ```bash
 kubectl get node -v=[1..5]
 ```
 
+- Result:
+
 ![Levels 1..5](./img/Levels-1-5.png)
+
+- Comment:
+  
+  - No difference from the default output
 
 ### Level 6
 
@@ -56,6 +64,8 @@ kubectl get node -v=6
 ![Level 6](./img/Level-6.png)
 
 - Comment:
+
+Now we see interesting things:
 
   - Which kubeconfig file is used
   - what API call to the Kubernetes API is being made
