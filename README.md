@@ -7,21 +7,25 @@ As I was getting deeper in [AKS](https://docs.microsoft.com/en-us/azure/aks/) an
 I wanted to see more details about what was happening under the hood.
 I did that to be able to have a full control of the Kubernetes API calls to setup some tools that would interact directly with the API.
 
+That's my default output (see here for setup details):
+
+![No verbosity](./img/No-verbosity.png)
+
 ## Getting verbosity
 
 To get some verbosity from kubectl is pretty simple. You just need to add the `-v=<level>` flag to the command you are running.
 
-Example:
+### Example
 
-Command:
+- Command:
 
 ```bash
 kubectl get node -v=6
 ```
 
-Result:
+- Result:
 
-![No verbosity level](./img/No-verbosity.png)
+![Level 6](./img/Level-6.png)
 
 ## Verbosity levels
 
@@ -41,17 +45,21 @@ kubectl get node -v=[1..5]
 
 We start to see interesting things at this level.
 
+- Command:
+
 ```bash
 kubectl get node -v=6
 ```
 
+- Result:
+
 ![Level 6](./img/Level-6.png)
 
-Now we see:
+- Comment:
 
-- Which kubeconfig file is used
-- what API call to the Kubernetes API is being made
-- the duration it took to execute the Web API call
+  - Which kubeconfig file is used
+  - what API call to the Kubernetes API is being made
+  - the duration it took to execute the Web API call
 
 
 The verbosity levels are:
