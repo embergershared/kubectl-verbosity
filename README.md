@@ -35,7 +35,7 @@ Level | Recommended | Adding from | Adding
 ------|---------|----------|---------
 `1..5` | | N/A | N/A
 `6` | Yes | N/A | <ul><li>`kubeconfig` file</li><li>RESTful `Kubernetes API` call</li><li>response and duration</li></ul>
-`7` | | 6 | <ul><li>`Request Headers`</li><li>`Response Status` as dedicated line</li></ul>
+`7` | | 6 | <ul><li>`Request Headers`</li><li>`Response Status` on a dedicated line</li></ul>
 `8` | Yes | 7 | <ul><li>`Response Headers`</li><li>truncated `Response Body`</li></ul>
 `9` | Yes| 6 | <ul><li>`curl` command</li><li>`HTTP Trace` on DNS resolution and Dial tcp result</li><li>`HTTP statistics` for durations</li><li>`Response Headers`</li><li>full `Response Body`</li></ul>
 `10` |  | 9 | <ul><li>`cached discovery`</li></ul>
@@ -102,7 +102,7 @@ kubectl get node -v=7
   - Same details than **level 6**
   - With addition of:
     - `Request Headers`
-    - `Response Status` as dedicated line
+    - `Response Status` on a dedicated line
 
 #### Level 8
 
