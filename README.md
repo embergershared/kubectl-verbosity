@@ -184,4 +184,7 @@ The machine used for this article has these relevant software components install
 - `PowerShell Core` version: `7.4.2`
 - PowerShell [`oh-my-posh`](https://ohmyposh.dev/docs/installation/windows) with theme: `Paradox`
 
-> Note: The AKS cluster used for the screenshots is completely private and locked down.
+## The AKS cluster
+
+- Kubernetes version: `1.28.9`
+- Private cluster: `Enabled`
