@@ -21,7 +21,7 @@ kubectl get node -v=6
 
 Result:
 
-[No verbosity level](./img/No-verbosity.png)
+![No verbosity level](./img/No-verbosity.png)
 
 ## Verbosity levels
 
@@ -35,7 +35,7 @@ They may do with errors and warnings, but I haven't seen any yet.
 kubectl get node -v=[1..5]
 ```
 
-[Levels 1..5](./img/Levels-1-5.png)
+![Levels 1..5](./img/Levels-1-5.png)
 
 ### Level 6
 
@@ -45,7 +45,7 @@ We start to see interesting things at this level.
 kubectl get node -v=6
 ```
 
-[Level 6](./img/Level-6.jpg)
+![Level 6](./img/Level-6.png)
 
 Now we see:
 
