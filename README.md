@@ -154,11 +154,17 @@ kubectl get node -v=10
 
 I didn't find differences between levels 10 and >10.
 
+## Conclusion
+
+I hope this would help, as I couldn't find any documentation on the subject.
+
 ## References
 
 [Kubernetes API Concepts](https://kubernetes.io/docs/reference/using-api/api-concepts/)
 
 [Command line tool: `kubectl`](https://kubernetes.io/docs/reference/kubectl/)
+
+[`kubectl` source code](https://github.com/kubernetes/kubectl)
 
 [Other Kubernetes tools](https://kubernetes.io/docs/reference/tools/)
 
