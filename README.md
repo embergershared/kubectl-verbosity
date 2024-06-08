@@ -71,7 +71,68 @@ kubectl get node -v=6
     - what RESTful `Kubernetes API` call is being made
     - the duration it took to execute the steps
 
-  - That would be my default verbosity level for debugging purposes and to build web API queries on my own from a .NET `HttpClient`, a `REST http client` or a `curl` command.
+  - That would be my default verbosity level for debugging purposes and to build RESTful web API queries on my own from a .NET `HttpClient`, a `REST http client` or a `curl` command.
+
+### Level 7
+
+- Command:
+
+```bash
+kubectl get node -v=7
+```
+
+- Result:
+
+![Level 7](./img/Level-7.png)
+
+- Comment:
+
+
+### Level 8
+
+- Command:
+
+```bash
+kubectl get node -v=8
+```
+
+- Result:
+
+![Level 8](./img/Level-8.png)
+
+- Comment:
+
+### Level 9
+
+- Command:
+
+```bash
+kubectl get node -v=9
+```
+
+- Result:
+
+![Level 9](./img/Level-9.png)
+
+- Comment:
+
+### Level 10
+
+- Command:
+
+```bash
+kubectl get node -v=10
+```
+
+- Result:
+
+![Level 10](./img/Level-10.png)
+
+- Comment:
+
+### Levels >10
+
+I didn't find differences between levels 10 and >10.
 
 ## References
 
@@ -79,7 +140,7 @@ kubectl get node -v=6
 
 [Command line tool: `kubectl`](https://kubernetes.io/docs/reference/kubectl/)
 
-[Other tools](https://kubernetes.io/docs/reference/tools/)
+[Other Kubernetes tools](https://kubernetes.io/docs/reference/tools/)
 
 [Kubernetes Client Libraries](https://kubernetes.io/docs/reference/using-api/client-libraries/)
 
