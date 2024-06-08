@@ -68,8 +68,7 @@ kubectl get node -v=6
   - Now we see interesting things:
 
     - Which `kubeconfig` file is used
-    - what RESTful `Kubernetes API` call is being made
-    - the duration it took to execute the steps
+    - what RESTful `Kubernetes API` call is being made with its response and duration
 
   - That would be my default verbosity level for debugging purposes and to build RESTful web API queries on my own from a .NET `HttpClient`, a `REST http client` or a `curl` command.
 
@@ -87,6 +86,10 @@ kubectl get node -v=7
 
 - Comment:
 
+  - Same details than **level 6**
+  - With addition of:
+    - `Request Headers`
+    - `Response Status` as dedicated line
 
 ### Level 8
 
@@ -102,6 +105,11 @@ kubectl get node -v=8
 
 - Comment:
 
+  - Same details than **level 7**
+  - With addition of:
+    - `Response Headers`
+    - `Response Body`
+
 ### Level 9
 
 - Command:
@@ -116,6 +124,14 @@ kubectl get node -v=9
 
 - Comment:
 
+  - Same details than **level 6** (not 7 or 8)
+  - With addition of:
+    - `curl` command
+    - `HTTP Trace` on DNS resolution and Dial tcp result
+    - `HTTP statistics` for durations
+    - `Response Headers`
+    - `Response Body`
+
 ### Level 10
 
 - Command:
@@ -129,6 +145,10 @@ kubectl get node -v=10
 ![Level 10](./img/Level-10.png)
 
 - Comment:
+
+  - Same details than **level 9**
+  - With addition of:
+    - `cached discovery`
 
 ### Levels >10
 
