@@ -71,15 +71,18 @@ kubectl get node -v=6
     - what RESTful `Kubernetes API` call is being made
     - the duration it took to execute the steps
 
+  - That would be my default verbosity level for debugging purposes and to build web API queries on my own from a .NET `HttpClient`, a `REST http client` or a `curl` command.
 
-The verbosity levels are:
+## References
 
-6. `--v=6` - Debug
-5. `--v=5` - Call
-4. `--v=4` - Info
-3. `--v=3` - Warning
-2. `--v=2` - Error
-1. `--v=1` - Panic
+[Kubernetes API Concepts](https://kubernetes.io/docs/reference/using-api/api-concepts/)
 
+[Command line tool: `kubectl`](https://kubernetes.io/docs/reference/kubectl/)
 
+[Other tools](https://kubernetes.io/docs/reference/tools/)
 
+[Kubernetes Client Libraries](https://kubernetes.io/docs/reference/using-api/client-libraries/)
+
+[Getting a Bearer token for AKS: use `kubelogin`](https://github.com/Azure/kubelogin)
+
+[Use `Exec Plugin` with `kubelogin` to connect to AKS](https://azure.github.io/kubelogin/concepts/exec-plugin.html)
