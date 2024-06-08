@@ -31,14 +31,14 @@ kubectl get node -v=6
 
 ### Summary
 
-Level | Adding from | Adding
----------|----------|---------
- `1..5` | N/A | N/A
- `6` | N/A | <ul><li>`kubeconfig` file</li><li>RESTful `Kubernetes API` call</li><li>response and duration</li></ul>
- `7` | 6 | <ul><li>`Request Headers`</li><li>`Response Status` as dedicated line</li></ul>
- `8` | 7 | <ul><li>`Response Headers`</li><li>truncated `Response Body`</li></ul>
- `9` | 6 | <ul><li>`curl` command</li><li>`HTTP Trace` on DNS resolution and Dial tcp result</li><li>`HTTP statistics` for durations</li><li>`Response Headers`</li><li>full `Response Body`</li></ul>
- `10` | 9 | <ul><li>`cached discovery`</li></ul>
+Recommended | Level | Adding from | Adding
+------|---------|----------|---------
+ | `1..5` | N/A | N/A
+Yes | `6` | N/A | <ul><li>`kubeconfig` file</li><li>RESTful `Kubernetes API` call</li><li>response and duration</li></ul>
+ | `7` | 6 | <ul><li>`Request Headers`</li><li>`Response Status` as dedicated line</li></ul>
+Yes|  `8` | 7 | <ul><li>`Response Headers`</li><li>truncated `Response Body`</li></ul>
+Yes|  `9` | 6 | <ul><li>`curl` command</li><li>`HTTP Trace` on DNS resolution and Dial tcp result</li><li>`HTTP statistics` for durations</li><li>`Response Headers`</li><li>full `Response Body`</li></ul>
+ | `10` | 9 | <ul><li>`cached discovery`</li></ul>
 
 ### Details
 
