@@ -29,7 +29,20 @@ kubectl get node -v=6
 
 ## Verbosity levels
 
-### Levels <6
+### Summary
+
+Level | Adding from | Adding
+---------|----------|---------
+ 1..5 | N/A | N/A
+ 6 | N/A | `kubeconfig` file, RESTful `Kubernetes API` call, response and duration
+ 7 | 6 | `Request Headers`, `Response Status` as dedicated line
+ 8 | 7 | `Response Headers`, truncated `Response Body`
+ 9 | 6 | `curl` command, `HTTP Trace` on DNS resolution and Dial tcp result, `HTTP statistics` for durations, `Response Headers`, full `Response Body`
+ 10 | 9 | `cached discovery`
+
+### Details
+
+#### Levels <6
 
 Commands with these levels don't output anything more than without the verbosity flag.
 
@@ -49,7 +62,7 @@ kubectl get node -v=[1..5]
 
   - No difference from the default output
 
-### Level 6
+#### Level 6
 
 We start to see interesting things at this level.
 
@@ -72,7 +85,7 @@ kubectl get node -v=6
 
   - That would be my default verbosity level for debugging purposes and to build RESTful web API queries on my own from a .NET `HttpClient`, a `REST http client` or a `curl` command.
 
-### Level 7
+#### Level 7
 
 - Command:
 
@@ -91,7 +104,7 @@ kubectl get node -v=7
     - `Request Headers`
     - `Response Status` as dedicated line
 
-### Level 8
+#### Level 8
 
 - Command:
 
@@ -110,7 +123,7 @@ kubectl get node -v=8
     - `Response Headers`
     - Truncated `Response Body`
 
-### Level 9
+#### Level 9
 
 - Command:
 
@@ -132,7 +145,7 @@ kubectl get node -v=9
     - `Response Headers`
     - Full `Response Body`
 
-### Level 10
+#### Level 10
 
 - Command:
 
@@ -150,7 +163,7 @@ kubectl get node -v=10
   - With addition of:
     - `cached discovery`
 
-### Levels >10
+#### Levels >10
 
 I didn't find differences between levels 10 and >10.
 
