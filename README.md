@@ -7,7 +7,7 @@ As I was getting deeper in [AKS](https://docs.microsoft.com/en-us/azure/aks/) an
 I wanted to see more details about what was happening under the hood.
 I did that to be able to have a full control of the Kubernetes API calls to setup some tools that would interact directly with the API.
 
-That's my default output (see [here](#my-machine-setup) for setup details):
+That's my default output (see [My machine setup](#my-machine-setup) for setup details):
 
 ![No verbosity](./img/No-verbosity.png)
 
