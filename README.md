@@ -46,7 +46,7 @@ kubectl get node -v=[1..5]
 ![Levels 1..5](./img/Levels-1-5.png)
 
 - Comment:
-  
+
   - No difference from the default output
 
 ### Level 6
@@ -65,11 +65,11 @@ kubectl get node -v=6
 
 - Comment:
 
-Now we see interesting things:
+  - Now we see interesting things:
 
-  - Which kubeconfig file is used
-  - what API call to the Kubernetes API is being made
-  - the duration it took to execute the Web API call
+    - Which `kubeconfig` file is used
+    - what RESTful `Kubernetes API` call is being made
+    - the duration it took to execute the steps
 
 
 The verbosity levels are:
