@@ -33,12 +33,12 @@ kubectl get node -v=6
 
 Level | Adding from | Adding
 ---------|----------|---------
- 1..5 | N/A | N/A
- 6 | N/A | `kubeconfig` file, RESTful `Kubernetes API` call, response and duration
- 7 | 6 | `Request Headers`, `Response Status` as dedicated line
- 8 | 7 | `Response Headers`, truncated `Response Body`
- 9 | 6 | `curl` command, `HTTP Trace` on DNS resolution and Dial tcp result, `HTTP statistics` for durations, `Response Headers`, full `Response Body`
- 10 | 9 | `cached discovery`
+ `**1..5**` | N/A | N/A
+ `**6**` | N/A | `kubeconfig` file, RESTful `Kubernetes API` call, response and duration
+ **7** | 6 | `Request Headers`, `Response Status` as dedicated line
+ **8** | 7 | `Response Headers`, truncated `Response Body`
+ **9** | 6 | `curl` command, `HTTP Trace` on DNS resolution and Dial tcp result, `HTTP statistics` for durations, `Response Headers`, full `Response Body`
+ **10** | 9 | `cached discovery`
 
 ### Details
 
