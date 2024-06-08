@@ -45,7 +45,7 @@ We start to see interesting things at this level.
 kubectl get node -v=6
 ```
 
-[Level 6](./img/Level-6.png)
+[Level 6](./img/Level-6.jpg)
 
 Now we see:
 
