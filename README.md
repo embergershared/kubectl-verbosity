@@ -173,3 +173,15 @@ I hope this would help, as I couldn't find any documentation on the subject.
 [Getting a Bearer token for AKS: use `kubelogin`](https://github.com/Azure/kubelogin)
 
 [Use `Exec Plugin` with `kubelogin` to connect to AKS](https://azure.github.io/kubelogin/concepts/exec-plugin.html)
+
+## My machine setup
+
+The machine used for this article has these relevant software components installed:
+
+- `Windows 11 Pro x64`
+- `kubectl for Windows` version: `v1.29.1`, installed with `choco install kubernetes-cli`
+- `kubelogin` version: `git hash: v0.1.0/0fcd072d45250a50cde855cf50204ad2dc784095`, installed with `az aks install-cli`
+- `PowerShell Core` version: `7.4.2`
+- PowerShell [`oh-my-posh`](https://ohmyposh.dev/docs/installation/windows) with theme: `Paradox`
+
+> Note: The AKS cluster used for the screenshots is completely private and locked down.
