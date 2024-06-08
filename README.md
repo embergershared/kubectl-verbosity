@@ -108,7 +108,7 @@ kubectl get node -v=8
   - Same details than **level 7**
   - With addition of:
     - `Response Headers`
-    - `Response Body`
+    - Truncated `Response Body`
 
 ### Level 9
 
@@ -130,7 +130,7 @@ kubectl get node -v=9
     - `HTTP Trace` on DNS resolution and Dial tcp result
     - `HTTP statistics` for durations
     - `Response Headers`
-    - `Response Body`
+    - Full `Response Body`
 
 ### Level 10
 
