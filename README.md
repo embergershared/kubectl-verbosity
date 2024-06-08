@@ -35,10 +35,10 @@ Level | Adding from | Adding
 ---------|----------|---------
  `1..5` | N/A | N/A
  `6` | N/A | <ul><li>`kubeconfig` file</li><li>RESTful `Kubernetes API` call</li><li>response and duration</li></ul>
- `7` | 6 | `Request Headers`, `Response Status` as dedicated line
- `8` | 7 | `Response Headers`, truncated `Response Body`
- `9` | 6 | `curl` command, `HTTP Trace` on DNS resolution and Dial tcp result, `HTTP statistics` for durations, `Response Headers`, full `Response Body`
- `10` | 9 | `cached discovery`
+ `7` | 6 | <ul><li>`Request Headers`</li><li>`Response Status` as dedicated line</li></ul>
+ `8` | 7 | <ul><li>`Response Headers`</li><li>truncated `Response Body`</li></ul>
+ `9` | 6 | <ul><li>`curl` command</li><li>`HTTP Trace` on DNS resolution and Dial tcp result</li><li>`HTTP statistics` for durations</li><li>`Response Headers`</li><li>full `Response Body`</li></ul>
+ `10` | 9 | <ul><li>`cached discovery`</li></ul>
 
 ### Details
 
